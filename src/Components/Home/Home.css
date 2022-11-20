@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'test';
+  }
+
+
+
+  .todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 520px;
+    min-height: 600px;
+    background: #fff;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+  }
+  
+  h1 {
+    margin: 32px 0;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+  
+  .todo-form {
+    margin-bottom: 32px;
+  }
+  
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid #fff;
+    outline: none;
+    width: 320px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .todo-input::placeholder {
+    color: #fff;
+  }
+  
+  .todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    outline: none;
+    background-color : transparent;
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .todo-button:hover {
+    background-color: rgba(255,255,255,0.1);
+  }
+  
+  .todo-input.edit {
+    padding: 14px 32px 14px 16px;
+    border-radius: 10px 10px 10px 10px;
+    border: 2px solid #fff;
+    outline: none;
+    width: 320px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;  }
+  
+  .todo-button.edit {
+    background: transparent;
+    padding: 22px 22px;
+    border: #fff;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    outline: none;
+    background-color : transparent;
+    font-size: 1rem;
+  }
+
+  .todo-button.edit:hover {
+    background: rgba(255,255,255,0.1);
+  }
+  
+  .todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+    padding: 12px;
+    border-radius: 10px;
+    width: 50%;
+    z-index: 1;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    margin-right: 5px;
+    color: #fff;
+    z-index: 10;
+
+  }
+  
+  .edit-icon {
+    color: #fff;
+    z-index: 10;
+  }
